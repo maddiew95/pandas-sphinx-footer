@@ -245,7 +245,11 @@ else:
     switcher_version = ".".join(version.split(".")[:2])
 
 # Simple copyright text - HTML links are handled in pandas_footer.html template
-copyright = Markup(f"{datetime.now().year}, pandas via <a href=\"https://numfocus.org\">NumFOCUS, Inc.</a> Hosted by <a href=\"https://www.ovhcloud.com\">OVHcloud</a>")
+copyright = Markup(
+    f"{datetime.now().year}, pandas via "
+    "<a href=\"https://numfocus.org\">NumFOCUS, Inc.</a> "
+    "Hosted by <a href=\"https://www.ovhcloud.com\">OVHcloud</a>"
+)
 
 html_theme_options = {
     "footer_start": ["copyright"],
